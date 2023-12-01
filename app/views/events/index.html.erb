@@ -2,6 +2,9 @@
 
 <ul>
   <% @events.each do |event| %>
-    <li> <%= event %>  </li>
+    <li>
+       <%= event.name %>  
+        in <%= event.location %>: <%= event.price %>
+    </li>
   <% end %>
 </ul>

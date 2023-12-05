@@ -13,7 +13,14 @@
 
   <body>
     <header>
-      <h1>Events</h1>
+      <nav>
+       <h1><%= link_to "Events", root_path %> </h1>
+       <ul>
+          <li>
+            <%= link_to "All Events", events_path %>
+          </li>
+       </ul>
+      </nav>
     </header>
 
     <div class="content">
